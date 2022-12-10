@@ -1,10 +1,18 @@
 # Regex (Regular Expressions in JS)
 
-Introductory paragraph (replace this with your text)
+Introductory paragraph:
+
+A JavaScript RegEx is a sequence of characters that forms a search pattern. You can define what needs to be searched in a text with the help of regular expressions. These expressions can be of any number of characters, be it alphabets, digits or special characters
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In JavaScript, regular expressions are often used with the two string methods: search() and replace(). 
+The search() method uses an expression to search for a match, and returns the position of the match.
+The replace() method returns a modified string where the pattern is replaced.
+We'll be breaking apart that expression that identifies an email address to the smallest details:
+```
+/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-]+)(\.[a-zA-Z]{2,5}){1,2}$/
+```
 
 ## Table of Contents
 
@@ -20,7 +28,11 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+The ^ anchor signifies that the string begins with the characters following it so that means that
+the username must be before the @ sign.
 
+The $ anchor signifies that the string ends with the characters before it so that means that
+the (\.[a-zA-Z]{2,5}) must be at the end of the string which stands for the .com .au .edu etc. 
 ### Quantifiers
 
 ### Grouping Constructs
@@ -37,4 +49,6 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+I'm currently a student at Monash University and here is a link to my GitHub!!
+
+GitHub: [github.com/IzzyKhalifa](https://github.com/IzzyKhalifa)
