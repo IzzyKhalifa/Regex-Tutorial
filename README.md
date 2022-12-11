@@ -1,6 +1,6 @@
 # Regex (Regular Expressions in JS)
 
-Introductory paragraph:
+## Introduction
 
 A JavaScript RegEx is a sequence of characters that forms a search pattern. You can define what needs to be searched in a text with the help of regular expressions. These expressions can be of any number of characters, be it alphabets, digits or special characters
 
@@ -18,11 +18,8 @@ We'll be breaking apart that expression that identifies an email address to the 
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [Grouping Constructs](#grouping-constructs)
 - [Bracket Expressions](#bracket-expressions)
 - [Character Classes](#character-classes)
-- [The OR Operator](#the-or-operator)
-- [Flags](#flags)
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
@@ -34,19 +31,20 @@ the username must be before the @ sign.
 The $ anchor signifies that the string ends with the characters before it so that means that
 the (\.[a-zA-Z]{2,5}) must be at the end of the string which stands for the .com .au .edu etc. 
 ### Quantifiers
-
-### Grouping Constructs
-
+The + quantifier matches the pattern at least one time.
+The curly brackets {2,5} used at the end of the expression matches the pattern for 
+at least 2 characters to a maximum of 5 [a-zA-Z]
+The curly brackets {1,2} used at the end of the expression means that you can use 
+[a-zA-Z] that bracket once or maximum twice
 ### Bracket Expressions
-
+The bracket expressions presents all the characters that can be included in a certain 
+pattern so [a-zA-Z] That bracket means that we are looking for any letter lowercase
+or uppercase etc you can also include any characters and numbers so it can look 
+something like that [a-zA-Z0-9_-.]
 ### Character Classes
-
-### The OR Operator
-
-### Flags
-
+The . character matches all characters except for  (/n) which is the newline character
 ### Character Escapes
-
+The backslash (\) in a regex escapes a character that otherwise would be interpreted literally. For example, the open curly brace ({) is used to begin a quantifier, but adding a backslash before the open curly brace (\{) means that the regex should look for the open curly brace character instead of beginning to define a quantifier. This is common when looking for strings with special characters that are the same as a particular component of a regex.
 ## Author
 
 I'm currently a student at Monash University and here is a link to my GitHub!!
